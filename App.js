@@ -21,11 +21,11 @@ export default function App() {
     "vazir-Medium": require("./assets/fonts/vazir/Vazirmatn-Medium.ttf"),
     "vazir-Regular": require("./assets/fonts/vazir/Vazirmatn-Regular.ttf"),
     "vazir-Thin": require("./assets/fonts/vazir/Vazirmatn-Thin.ttf"),
-    digital: require("./assets/fonts/digital-7/digital-7.ttf"),
+    "digital": require("./assets/fonts/digital-7/digital-7.ttf"),
   });
-  // if (!fontLoaded) {
-  //   return <AppLoading />;
-  // }
+  if (!fontLoaded) {
+    return <AppLoading />;
+  }
 
   return (
     <>
@@ -34,9 +34,9 @@ export default function App() {
         {/* <Starting /> */}
         {/* <Login /> */}
         {/* <ComfirmLogin /> */}
-        <AddCarData />
+        {/* <AddCarData /> */}
         {/* <CollectionInformation /> */}
-        {/* <Services /> */}
+        <Services />
         {/* <FuelManagement /> */}
         {/* <AddMachin /> */}
         {/* <MainService />  */}
@@ -48,6 +48,8 @@ export default function App() {
 const styles = StyleSheet.create({
   rootContainer: {
     flex: 1,
+    width:'100%',
+    height:'100%',
     backgroundColor: Colors.primaryBlack500,
     alignItems: "center",
     justifyContent: "center",

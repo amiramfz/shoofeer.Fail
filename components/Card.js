@@ -4,13 +4,13 @@ import React from "react";
 import Colors from "../assets/constatns/Colors";
 import Title from "./Title";
 
-export default function Card({ children }) {
+export default function Card({ children , title}) {
   return (
     <>
       <View style={styles.container}>
         <ScrollView style={styles.scroll}>
           <View style={styles.scrollinner}>
-            <Title>اطلاعات وسیله نقلیه</Title>
+            <Title>{title}</Title>
             <View style={styles.innerContainer}>{children}</View>
           </View>
         </ScrollView>
@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   innerContainer: {
-    width: "80%",
+    width: "85%",
     backgroundColor: Colors.primaryBlack400,
     borderRadius: 20,
-    padding: 10,
+    padding: 15,
   },
   scroll: {
     width: "100%",

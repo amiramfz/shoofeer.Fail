@@ -8,7 +8,7 @@ export default function Title({children}) {
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.text}>{children}</Text>
+        <Text onp style={styles.text}>{children}</Text>
       </View>
     </>
   );

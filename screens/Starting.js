@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primaryBlack500,
     alignItems: "center",
     justifyContent: "center",
+    height:'100%',
+    width:'100%',
   },
   inerContainer: {
     minWidth: 270,

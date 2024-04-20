@@ -3,11 +3,12 @@ import React from "react";
 
 import Colors from "../assets/constatns/Colors";
 
-export default function PrimaryButton1({ children, style }) {
+export default function PrimaryButton1({ children, style , buttHandler }) {
+
   return (
     <>
       <View style={[styles.container, style]}>
-        <Text style={styles.text}>{children}</Text>
+        <Text onPress={buttHandler} style={styles.text}>{children}</Text>
       </View>
     </>
   );
@@ -22,7 +23,11 @@ const styles = StyleSheet.create({
   text: {
     color: Colors.primaryBlack500,
     fontSize: 16,
-    fontFamily: "vazir-Regular",
+    fontFamily: "vazir-Medium",
     fontWeight: "800",
+    width:'100%',
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign:'center'
   },
 });
